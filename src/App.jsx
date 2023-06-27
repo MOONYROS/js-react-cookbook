@@ -1,7 +1,53 @@
-function App() {
-  return (
-    <h1>APPLICATION 📱</h1>
-  )
+import { useState } from "react";
+
+import RecipeList from "./components/RecipeList";
+
+export default function App() {
+    const [recipes, setRecipes] = useState(SAMPLE_RECIPES);
+
+    return (
+        <>
+            <RecipeList recipes={recipes} />
+        </>
+    );
 }
 
-export default App
+const SAMPLE_RECIPES = [
+    {
+        id: 1,
+        name: "svickova s knedlikem",
+        time: "2 hodiny",
+        procedure: "Vezmete knedlik, dejte ho k masu a polijte svickovou",
+        items: [
+          '1 knedlik',
+          '1 maso',
+          '1 svickova'
+        ]
+    },
+    {
+        id: 2,
+        name: "vajecna omeleta",
+        time: "15 minut",
+        procedure:
+            "na panvi rozehrejte maslo, vyklepnete vajicka, pockejte, az omeleta ztuhne. Nasledne...",
+        items: [
+          '2 vajca',
+          '2 tousty',
+          '50g masla',
+          '2 platky sunky'
+        ]
+    },
+    {
+        id: 3,
+        name: "nejakej paradni blivajz",
+        time: "3 min 15 sek",
+        procedure:
+            "Silene slozity recept, ktery bude hotovy za 3 minuty a 15 sekund",
+        items: [
+            'par nejakych',
+            'surovin',
+            'co se daji',
+            'pouzit'
+        ]
+    },
+];
