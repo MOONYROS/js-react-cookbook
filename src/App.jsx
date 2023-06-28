@@ -3,10 +3,11 @@ import { useState } from "react";
 import RecipeList from "./components/RecipeList";
 
 export default function App() {
-    const [recipes, setRecipes] = useState(SAMPLE_RECIPES);
+    const [recipes, setRecipes] = useState(SORTED_SAMPLES);
 
     return (
         <>
+            <h1>FOOD RECIPES 🍝</h1>
             <RecipeList recipes={recipes} />
         </>
     );
@@ -51,3 +52,5 @@ const SAMPLE_RECIPES = [
         ]
     },
 ];
+
+const SORTED_SAMPLES = SAMPLE_RECIPES.sort((a, b) => a.name.localeCompare(b.name)); // 'a.name' is by 'localeCompare' compared with 'b.name'
