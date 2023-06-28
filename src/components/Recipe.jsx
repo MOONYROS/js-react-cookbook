@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Recipe({ recipe }) {
-  return (
-    <div>
-        {recipe.name}
-    </div>
-  )
+    return <div>{recipe.name}</div>;
 }
