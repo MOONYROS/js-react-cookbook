@@ -19,7 +19,7 @@ export default function RecipeEdit({ onRecipeCreate }) {
     };
 
     const handleItemChange = (e) => {
-        setItems(e.target.value.split("\n"));
+        setItems(e.target.value.split(", "));
     };
 
     const handleSubmit = (e) => {
