@@ -1,6 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function RecipeEdit() {
+export default function RecipeEdit({ onRecipeCreate }) {
+    const [name, setName] = useState("");
+    const [time, setTime] = useState("");
+    const [procedure, setProcedure] = useState("");
+    const [items, setItems] = useState("");
+
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleTimeChange = (e) => {
+        setTime(e.target.value);
+    };
+
+    const handleProcedureChange = (e) => {
+        setProcedure(e.target.value);
+    };
+
+    const handleItemChange = (e) => {
+        setItems(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const newRecipe = {
+            id: Date.now(),
+            name,
+            time,
+            procedure,
+            items,
+        };
+
+        onRecipeCreate(newRecipe);
+        setName("");
+        setTime("");
+        setProcedure("");
+        setItems([]);
+    };
+
     return (
         <form>
             {/* handling name */}
@@ -8,7 +47,8 @@ export default function RecipeEdit() {
             <input
                 type="text"
                 id="name"
-                value={name} /* on change handle name change*/
+                value={name}
+                onChange={handleNameChange}
                 required
             />
 
@@ -17,7 +57,8 @@ export default function RecipeEdit() {
             <input
                 type="text"
                 id="time"
-                value={time} /* on change handle time change*/
+                value={time}
+                onChange={handleTimeChange}
                 required
             />
 
@@ -26,7 +67,8 @@ export default function RecipeEdit() {
             <textarea
                 type="text"
                 id="procedure"
-                value={procedure} /* on change handle procedure change*/
+                value={procedure}
+                onChange={handleProcedureChange}
                 required
             />
 
@@ -35,7 +77,8 @@ export default function RecipeEdit() {
             <textarea
                 type="text"
                 id="items"
-                value={procedure} /* on change handle items change*/
+                value={procedure}
+                onChange={handleItemChange}
                 required
             />
 
