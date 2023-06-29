@@ -19,7 +19,7 @@ export default function RecipeEdit({ onRecipeCreate }) {
     };
 
     const handleItemChange = (e) => {
-        setItems(e.target.value);
+        setItems(e.target.value.split("\n"));
     };
 
     const handleSubmit = (e) => {
@@ -65,7 +65,6 @@ export default function RecipeEdit({ onRecipeCreate }) {
             {/* handling procedure */}
             <label htmlFor="procedure">Procedure:</label>
             <textarea
-                type="text"
                 id="procedure"
                 value={procedure}
                 onChange={handleProcedureChange}
@@ -75,9 +74,8 @@ export default function RecipeEdit({ onRecipeCreate }) {
             {/* handling items */}
             <label htmlFor="items">Items:</label>
             <textarea
-                type="text"
                 id="items"
-                value={procedure}
+                value={items}
                 onChange={handleItemChange}
                 required
             />
