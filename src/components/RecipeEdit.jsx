@@ -41,7 +41,7 @@ export default function RecipeEdit({ onRecipeCreate }) {
     };
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             {/* handling name */}
             <label htmlFor="name">Name:</label>
             <input
