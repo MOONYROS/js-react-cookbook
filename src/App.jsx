@@ -3,14 +3,22 @@ import { useState } from "react";
 import RecipeEdit from "./components/RecipeEdit";
 import RecipeList from "./components/RecipeList";
 
+import TestComponent from "./components/TestComponent";
+
 export default function App() {
     const [recipes, setRecipes] = useState(SORTED_SAMPLES);
+    const recipesArr = [
+        "svickova s knedlikem",
+        "vajecna omeleta",
+        "nejakej paradni blivajz",
+    ];
 
     return (
         <>
             <h1>FOOD RECIPES 🍝</h1>
-            <RecipeEdit />
-            <RecipeList recipes={recipes} />
+            <TestComponent recipeNames={recipesArr} />
+            {/* <RecipeEdit onRecipeCreate={handleSubmit} />
+            <RecipeList recipes={recipes} /> */}
         </>
     );
 }
