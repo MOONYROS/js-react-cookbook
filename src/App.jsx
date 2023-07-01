@@ -4,6 +4,7 @@ import RecipeEdit from "./components/RecipeEdit";
 import RecipeList from "./components/RecipeList";
 
 import TestComponent from "./components/TestComponent";
+import SubmitForm from "./components/SubmitForm";
 
 export default function App() {
     const [recipes, setRecipes] = useState(SORTED_SAMPLES);
@@ -16,7 +17,10 @@ export default function App() {
     return (
         <>
             <h1>FOOD RECIPES 🍝</h1>
+
+            <SubmitForm />
             <TestComponent recipeNames={recipesArr} />
+
             {/* <RecipeEdit onRecipeCreate={handleSubmit} />
             <RecipeList recipes={recipes} /> */}
         </>
