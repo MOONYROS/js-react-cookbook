@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SubmitForm() {
+export default function SubmitForm({ onFormSubmit }) {
     const handleSubmit = (e) => {
         e.preventDefault();
         const submittedText = e.target.inputField.value;
