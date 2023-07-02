@@ -8,18 +8,19 @@ import SubmitForm from "./components/SubmitForm";
 
 export default function App() {
     const [recipes, setRecipes] = useState(SORTED_SAMPLES);
-    const recipesArr = [
-        "svickova s knedlikem",
-        "vajecna omeleta",
-        "nejakej paradni blivajz",
-    ];
+
+    const [submittedText, setSubmittedText] = useState("");
+
+    const handleSubmit = (text) => {
+        setSubmittedText(text);
+    };
 
     return (
         <>
             <h1>FOOD RECIPES 🍝</h1>
 
-            <SubmitForm />
-            <TestComponent recipeNames={recipesArr} />
+            <SubmitForm onFormSubmit={handleSubmit} />
+            {submittedText && <TestComponent recipeNames={submittedText} />}
 
             {/* <RecipeEdit onRecipeCreate={handleSubmit} />
             <RecipeList recipes={recipes} /> */}
