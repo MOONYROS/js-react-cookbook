@@ -3,9 +3,23 @@ import TestComponent from "./components/TestComponent";
 import SubmitForm from "./components/SubmitForm";
 
 export default function App() {
+    const [recipeNames, setRecipeNames] = useState([]);
+
+    const handleFormSubmit = (submittedText) => {
+        setRecipeNames((prevRecipeNames) => [
+            ...prevRecipeNames,
+            submittedText,
+        ]);
+    };
+
     return (
         <>
             <h1>FOOD RECIPES 🍝</h1>
+
+            <SubmitForm onFormSubmit={handleFormSubmit} />
+            {recipeNames.map((name, index) => {
+                return <TestComponent key={index} recipeNames={name} />;
+            })}
         </>
     );
 }
