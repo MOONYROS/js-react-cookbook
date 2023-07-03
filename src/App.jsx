@@ -10,17 +10,28 @@ export default function App() {
     const [recipes, setRecipes] = useState(SORTED_SAMPLES);
 
     const [submittedText, setSubmittedText] = useState("");
+    const [recipeNames, setRecipeNames] = useState([]);
 
     const handleSubmit = (text) => {
         setSubmittedText(text);
+    };
+
+    const addRecipeName = () => {
+        const newRecipeName = `Recipe ${recipeNames.length + 1}`;
+        setRecipeNames([...recipeNames, newRecipeName]);
     };
 
     return (
         <>
             <h1>FOOD RECIPES 🍝</h1>
 
-            <SubmitForm onFormSubmit={handleSubmit} />
-            {submittedText && <TestComponent recipeNames={submittedText} />}
+            <button onClick={addRecipeName}>Add Recipe</button>
+            {recipeNames.map((recipeName, index) => {
+                <TestComponent key={index} recipeName={recipeName} />;
+            })}
+
+            {/* <SubmitForm onFormSubmit={handleSubmit} />
+            {submittedText && <TestComponent recipeNames={submittedText} />} */}
 
             {/* <RecipeEdit onRecipeCreate={handleSubmit} />
             <RecipeList recipes={recipes} /> */}
