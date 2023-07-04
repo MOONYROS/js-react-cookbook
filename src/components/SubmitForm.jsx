@@ -3,8 +3,9 @@ import React from "react";
 export default function SubmitForm({ onFormSubmit }) {
     const handleSubmit = (e) => {
         e.preventDefault();
-        const submittedText = e.target.inputField.value;
-        onFormSubmit(submittedText);
+        const submittedText = e.target.nameField.value;
+        const submittedDescription = e.target.descriptionField.value;
+        onFormSubmit(submittedText, submittedDescription);
         e.target.reset();
     };
 
@@ -18,11 +19,11 @@ export default function SubmitForm({ onFormSubmit }) {
                 type="text"
                 required
             />
-            <label htmlFor="nameField">Recipe Description:</label>
+            <label htmlFor="descriptionField">Recipe Description:</label>
             <input
-                id="decriptionField"
-                name="decriptionField"
-                placeholder="type recipe name"
+                id="descriptionField"
+                name="descriptionField"
+                placeholder="type description"
                 type="text"
                 required
             />
