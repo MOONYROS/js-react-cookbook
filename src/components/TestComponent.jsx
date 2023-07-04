@@ -1,5 +1,10 @@
 import React from "react";
 
-export default function TestComponent({ recipeNames }) {
-    return <h3>{recipeNames}</h3>;
+export default function TestComponent({ recipeName, description }) {
+    return (
+        <>
+            <h3>{recipeName}</h3>
+            <p>{description}</p>
+        </>
+    );
 }

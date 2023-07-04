@@ -10,12 +10,21 @@ export default function SubmitForm({ onFormSubmit }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="inputField">TYPE SMTH</label>
+            <label htmlFor="nameField">Recipe Name:</label>
             <input
-                id="inputField"
-                name="inputField"
+                id="nameField"
+                name="nameField"
                 placeholder="type recipe name"
                 type="text"
+                required
+            />
+            <label htmlFor="nameField">Recipe Description:</label>
+            <input
+                id="decriptionField"
+                name="decriptionField"
+                placeholder="type recipe name"
+                type="text"
+                required
             />
             <button type="submit">SUBMIT PLS</button>
         </form>

@@ -18,7 +18,7 @@ export default function App() {
 
             <SubmitForm onFormSubmit={handleFormSubmit} />
             {recipeNames.map((name, index) => {
-                return <TestComponent key={index} recipeNames={name} />;
+                return <TestComponent key={index} recipeName={name} />;
             })}
         </>
     );
