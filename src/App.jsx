@@ -43,7 +43,3 @@ export default function App() {
         </>
     );
 }
-
-// const SORTED_SAMPLES = SAMPLE_RECIPES.sort((a, b) =>
-//     a.name.localeCompare(b.name)
-// ); // 'a.name' is by 'localeCompare' compared with 'b.name'
