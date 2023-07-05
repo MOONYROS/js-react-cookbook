@@ -5,6 +5,14 @@ import SubmitForm from "./components/SubmitForm";
 export default function App() {
     const [recipes, setRecipes] = useState([]);
 
+    const handleDelete = (index) => {
+        setRecipes((prevRecipes) => {
+            const updatedRecipes = [...prevRecipes];
+            updatedRecipes.splice(index, 1);
+            return updatedRecipes;
+        });
+    };
+
     const handleFormSubmit = (submittedText, submittedDescription) => {
         const newRecipe = {
             name: submittedText,
@@ -28,6 +36,7 @@ export default function App() {
                         key={index}
                         recipeName={recipe.name}
                         description={recipe.description}
+                        onDelete={() => handleDelete(index)}
                     />
                 );
             })}

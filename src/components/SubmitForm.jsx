@@ -27,7 +27,7 @@ export default function SubmitForm({ onFormSubmit }) {
                 type="text"
                 required
             />
-            <button type="submit">SUBMIT PLS</button>
+            <button type="submit">Create Recipe</button>
         </form>
     );
 }
