@@ -5,10 +5,11 @@ import SubmitForm from "./components/SubmitForm";
 export default function App() {
     const [recipes, setRecipes] = useState([]);
 
-    const handleDelete = (index) => {
+    const handleDelete = (name) => {
         setRecipes((prevRecipes) => {
-            const updatedRecipes = [...prevRecipes];
-            updatedRecipes.splice(index, 1);
+            const updatedRecipes = prevRecipes.filter(
+                (recipe) => recipe.name !== name
+            );
             return updatedRecipes;
         });
     };
@@ -36,7 +37,7 @@ export default function App() {
                         key={index}
                         recipeName={recipe.name}
                         description={recipe.description}
-                        onDelete={() => handleDelete(index)}
+                        onDelete={() => handleDelete(recipe.name)}
                     />
                 );
             })}
