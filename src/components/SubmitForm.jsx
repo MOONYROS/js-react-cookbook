@@ -15,15 +15,15 @@ export default function SubmitForm({ onFormSubmit }) {
             <input
                 id="nameField"
                 name="nameField"
-                placeholder="type recipe name"
+                placeholder="recipe name"
                 type="text"
                 required
             />
             <label htmlFor="descriptionField">Recipe Description:</label>
-            <input
+            <textarea
                 id="descriptionField"
                 name="descriptionField"
-                placeholder="type description"
+                placeholder="recipe description..."
                 type="text"
                 required
             />
