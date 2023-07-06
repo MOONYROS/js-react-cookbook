@@ -14,10 +14,15 @@ export default function App() {
         });
     };
 
-    const handleFormSubmit = (submittedText, submittedDescription) => {
+    const handleFormSubmit = (
+        submittedText,
+        submittedDescription,
+        submittedIngredients
+    ) => {
         const newRecipe = {
             name: submittedText,
             description: submittedDescription,
+            ingredients: submittedIngredients.split(", "),
         };
         setRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
     };
@@ -37,6 +42,7 @@ export default function App() {
                         key={index}
                         recipeName={recipe.name}
                         description={recipe.description}
+                        ingredients={recipe.ingredients}
                         onDelete={() => handleDelete(recipe.name)}
                     />
                 );

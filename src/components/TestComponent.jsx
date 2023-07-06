@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function TestComponent({ recipeName, description, onDelete }) {
+export default function TestComponent({
+    recipeName,
+    description,
+    ingredients,
+    onDelete,
+}) {
     const handleDeleteClick = () => {
         onDelete();
     };
@@ -9,6 +14,11 @@ export default function TestComponent({ recipeName, description, onDelete }) {
         <>
             <h3>{recipeName}</h3>
             <p>{description}</p>
+            <ul>
+                {ingredients.map((ingredient, index) => (
+                    <li key={index}>{ingredient}</li>
+                ))}
+            </ul>
             <button type="button" onClick={handleDeleteClick}>
                 Delete Recipe
             </button>
