@@ -1,6 +1,6 @@
 import { useState } from "react";
-import TestComponent from "./TestComponent";
-import SubmitForm from "./SubmitForm";
+import TestComponent from "./Recipe";
+import SubmitForm from "./RecipeCreator";
 
 export default function App() {
     const [recipes, setRecipes] = useState([]);
