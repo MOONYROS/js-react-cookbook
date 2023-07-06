@@ -17,12 +17,14 @@ export default function App() {
     const handleFormSubmit = (
         submittedText,
         submittedDescription,
-        submittedIngredients
+        submittedIngredients,
+        submittedProcedure
     ) => {
         const newRecipe = {
             name: submittedText,
             description: submittedDescription,
             ingredients: submittedIngredients.split(", "),
+            procedure: submittedProcedure,
         };
         setRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
     };
@@ -43,6 +45,7 @@ export default function App() {
                         recipeName={recipe.name}
                         description={recipe.description}
                         ingredients={recipe.ingredients}
+                        procedure={recipe.procedure}
                         onDelete={() => handleDelete(recipe.name)}
                     />
                 );

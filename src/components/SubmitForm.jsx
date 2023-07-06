@@ -6,7 +6,13 @@ export default function SubmitForm({ onFormSubmit }) {
         const submittedText = e.target.nameField.value;
         const submittedDescription = e.target.descriptionField.value;
         const submittedIngredients = e.target.ingrList.value;
-        onFormSubmit(submittedText, submittedDescription, submittedIngredients);
+        const submittedProcedure = e.target.procedureField.value;
+        onFormSubmit(
+            submittedText,
+            submittedDescription,
+            submittedIngredients,
+            submittedProcedure
+        );
         e.target.reset();
     };
 
@@ -33,6 +39,14 @@ export default function SubmitForm({ onFormSubmit }) {
                 id="ingrList"
                 name="ingrList"
                 placeholder="ingredient 1, ingredient 2..."
+                type="text"
+                required
+            />
+            <label htmlFor="procedureField">Procedure:</label>
+            <textarea
+                id="procedureField"
+                name="procedureField"
+                placeholder="Type in the procedure..."
                 type="text"
                 required
             />

@@ -4,6 +4,7 @@ export default function TestComponent({
     recipeName,
     description,
     ingredients,
+    procedure,
     onDelete,
 }) {
     const handleDeleteClick = () => {
@@ -19,6 +20,7 @@ export default function TestComponent({
                     <li key={index}>{ingredient}</li>
                 ))}
             </ul>
+            <p>{procedure}</p>
             <button type="button" onClick={handleDeleteClick}>
                 Delete Recipe
             </button>
