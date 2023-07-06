@@ -1,3 +1,4 @@
+import React from "react";
 import MainRecipes from "./components/MainRecipes";
 
 export default function App() {
