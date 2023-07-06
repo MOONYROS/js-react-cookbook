@@ -15,7 +15,10 @@ export default function Recipe({
     return (
         <>
             <h3>{recipeName}</h3>
-            <RecipeChapter heading={"Description"} content={description} />
+            <RecipeChapter
+                heading={"Description"}
+                content={<p>{description}</p>}
+            />
             <RecipeChapter
                 heading={"Ingredients"}
                 content={
@@ -26,7 +29,10 @@ export default function Recipe({
                     </ul>
                 }
             />
-            <RecipeChapter heading={"Procedure"} content={procedure} />
+            <RecipeChapter
+                heading={"Preparation"}
+                content={<p>{procedure}</p>}
+            />
             <button type="button" onClick={handleDeleteClick}>
                 Delete Recipe
             </button>
