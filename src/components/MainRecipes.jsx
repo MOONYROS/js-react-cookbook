@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TestComponent from "./Recipe";
+import Recipe from "./Recipe";
 import SubmitForm from "./RecipeCreator";
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
             <SubmitForm onFormSubmit={handleFormSubmit} />
             {sortedRecipes.map((recipe, index) => {
                 return (
-                    <TestComponent
+                    <Recipe
                         key={index}
                         recipeName={recipe.name}
                         description={recipe.description}

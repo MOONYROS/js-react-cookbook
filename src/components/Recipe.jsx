@@ -1,7 +1,7 @@
 import React from "react";
 import RecipeChapter from "./RecipeChapter";
 
-export default function TestComponent({
+export default function Recipe({
     recipeName,
     description,
     ingredients,
