@@ -1,4 +1,5 @@
 import React from "react";
+import InputForm from "./InputForm";
 
 export default function SubmitForm({ onFormSubmit }) {
     const handleSubmit = (e) => {
@@ -18,13 +19,10 @@ export default function SubmitForm({ onFormSubmit }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="nameField">Recipe Name:</label>
-            <input
-                id="nameField"
-                name="nameField"
-                placeholder="recipe name"
-                type="text"
-                required
+            <InputForm
+                id={"nameField"}
+                text={"Recipe Name:"}
+                placeholder={"recipe name"}
             />
             <label htmlFor="descriptionField">Recipe Description:</label>
             <textarea
