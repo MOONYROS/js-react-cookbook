@@ -2,7 +2,7 @@ import { useState } from "react";
 import Recipe from "./Recipe";
 import SubmitForm from "./RecipeCreator";
 
-export default function App() {
+export default function MainRecipes() {
     const [recipes, setRecipes] = useState([]);
 
     const handleDelete = (name) => {

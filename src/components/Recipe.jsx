@@ -14,7 +14,7 @@ export default function Recipe({
 
     return (
         <>
-            <h3>{recipeName}</h3>
+            <h2>{recipeName}</h2>
             <RecipeChapter
                 heading={"Description"}
                 content={<p>{description}</p>}
