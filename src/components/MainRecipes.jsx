@@ -33,6 +33,17 @@ export default function MainRecipes() {
         a.name.localeCompare(b.name)
     );
 
+    const handleRecipeUpdate = (updatedRecipe) => {
+        setRecipes((prevRecipes) => {
+            const updatedRecipes = prevRecipes.map((recipe) =>
+                recipe.name === updatedRecipe.recipeName // BEFORE: recipe.recipeName === updatedRecipe.recipeName ? updatedRecipe : recipe
+                    ? updatedRecipe
+                    : recipe
+            );
+            return updatedRecipes;
+        });
+    };
+
     return (
         <>
             <SubmitForm onFormSubmit={handleFormSubmit} />
@@ -45,6 +56,7 @@ export default function MainRecipes() {
                         ingredients={recipe.ingredients}
                         procedure={recipe.procedure}
                         onDelete={() => handleDelete(recipe.name)}
+                        onUpdate={handleRecipeUpdate}
                     />
                 );
             })}
