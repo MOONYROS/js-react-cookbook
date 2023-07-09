@@ -21,6 +21,7 @@ export default function MainRecipes() {
         submittedProcedure
     ) => {
         const newRecipe = {
+            id: Date.now(), // Generate a unique ID
             name: submittedText,
             description: submittedDescription,
             ingredients: submittedIngredients.split(", "),
@@ -36,7 +37,7 @@ export default function MainRecipes() {
     const handleRecipeUpdate = (updatedRecipe) => {
         setRecipes((prevRecipes) => {
             const updatedRecipes = prevRecipes.map((recipe) =>
-                recipe.name === updatedRecipe.recipeName // BEFORE: recipe.recipeName === updatedRecipe.recipeName ? updatedRecipe : recipe
+                recipe.recipeName === updatedRecipe.recipeName
                     ? updatedRecipe
                     : recipe
             );
@@ -47,10 +48,10 @@ export default function MainRecipes() {
     return (
         <>
             <SubmitForm onFormSubmit={handleFormSubmit} />
-            {sortedRecipes.map((recipe, index) => {
+            {sortedRecipes.map((recipe) => {
                 return (
                     <Recipe
-                        key={index}
+                        key={recipe.id}
                         recipeName={recipe.name}
                         description={recipe.description}
                         ingredients={recipe.ingredients}

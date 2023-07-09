@@ -108,16 +108,16 @@ export default function Recipe({
 
     return (
         <>
-            <h2>{recipeName}</h2>
+            <h2>{editedRecipe.recipeName}</h2>
             <RecipeChapter
                 heading={"Description"}
-                content={<p>{description}</p>}
+                content={<p>{editedRecipe.description}</p>}
             />
             <RecipeChapter
                 heading={"Ingredients"}
                 content={
                     <ul>
-                        {ingredients.map((ingredient, index) => (
+                        {editedRecipe.ingredients.map((ingredient, index) => (
                             <li key={index}>{ingredient}</li>
                         ))}
                     </ul>
@@ -125,7 +125,7 @@ export default function Recipe({
             />
             <RecipeChapter
                 heading={"Preparation"}
-                content={<p>{procedure}</p>}
+                content={<p>{editedRecipe.procedure}</p>}
             />
             <button type="button" onClick={handleEditClick}>
                 Edit Recipe
