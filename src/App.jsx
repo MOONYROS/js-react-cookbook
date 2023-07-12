@@ -9,17 +9,12 @@ export default function App() {
     return (
         <>
             <BrowserRouter>
-                <div>
-                    <Header />
-                    <Switch>
-                        <Route exact path="/" component={MainRecipes} />
-                        <Route
-                            path="/documentation"
-                            component={Documentation}
-                        />
-                    </Switch>
-                    <Footer />
-                </div>
+                <Header />
+                <Switch>
+                    <Route exact path="/" component={MainRecipes} />
+                    <Route path="/documentation" component={Documentation} />
+                </Switch>
+                <Footer />
             </BrowserRouter>
         </>
     );
