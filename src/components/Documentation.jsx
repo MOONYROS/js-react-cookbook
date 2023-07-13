@@ -62,6 +62,17 @@ export default function Documentation() {
                     button.
                 </p>
             </div>
+            <div>
+                <h2>How to delete a recipe</h2>
+                <p>
+                    To delete the recipe, you need to click on "Delete Recipe"
+                    button. Please note that this action will delete the recipe
+                    permanently and there is no way of getting it back. Also,
+                    the application will not ask whether you are sure about the
+                    deletion, so please, make sure you want to remove the recipe
+                    on button of which you are about to click.
+                </p>
+            </div>
         </>
     );
 }
