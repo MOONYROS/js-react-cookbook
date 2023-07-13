@@ -45,6 +45,23 @@ export default function Documentation() {
                     with your filled information.
                 </p>
             </div>
+            <div>
+                <h2>How to edit the recipe</h2>
+                <p>
+                    To edit the recipe you need to click on "Edit Recipe" button
+                    which will open editing areas, similar to the ones you used
+                    to create the recipe. Here you can simply change
+                    informations of any kind you desire.
+                </p>
+                <p>
+                    After making all the changed, you can then click on the
+                    "Save" button to change the previous data you entered.
+                </p>
+                <p>
+                    To discard your changes, you simply click on "Cancel"
+                    button.
+                </p>
+            </div>
         </>
     );
 }
