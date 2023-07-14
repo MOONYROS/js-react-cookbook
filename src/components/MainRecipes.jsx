@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { RecipeContext } from "../RecipeContext";
 import Recipe from "./Recipe";
 import SubmitForm from "./RecipeCreator";
 
 export default function MainRecipes() {
-    const [recipes, setRecipes] = useState([]);
+    const { recipes, setRecipes } = useContext(RecipeContext);
 
     const handleDelete = (name) => {
         setRecipes((prevRecipes) => {
@@ -21,7 +22,7 @@ export default function MainRecipes() {
         submittedProcedure
     ) => {
         const newRecipe = {
-            id: Date.now(), // Generate a unique ID
+            id: Date.now(),
             name: submittedText,
             description: submittedDescription,
             ingredients: submittedIngredients.split(", "),
@@ -37,7 +38,7 @@ export default function MainRecipes() {
     const handleRecipeUpdate = (updatedRecipe) => {
         setRecipes((prevRecipes) => {
             const updatedRecipes = prevRecipes.map((recipe) =>
-                recipe.recipeName === updatedRecipe.recipeName
+                recipe.name === updatedRecipe.recipeName
                     ? updatedRecipe
                     : recipe
             );

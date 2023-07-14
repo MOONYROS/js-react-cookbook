@@ -1,21 +1,24 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import MainRecipes from "./components/MainRecipes";
 import Documentation from "./components/Documentation";
 import Footer from "./components/Footer";
+import { RecipeContext } from "./RecipeContext";
 
 export default function App() {
+    const [recipes, setRecipes] = useState([]);
+
     return (
-        <>
-            <BrowserRouter>
+        <RecipeContext.Provider value={{ recipes, setRecipes }}>
+            <Router>
                 <Header />
                 <Switch>
                     <Route exact path="/" component={MainRecipes} />
                     <Route path="/documentation" component={Documentation} />
                 </Switch>
                 <Footer />
-            </BrowserRouter>
-        </>
+            </Router>
+        </RecipeContext.Provider>
     );
 }
