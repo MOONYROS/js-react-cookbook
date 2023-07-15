@@ -3,8 +3,15 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <>
-            <h1>React cookbook 🍝 in Javascript 🟨</h1>
+        <div style={{ backgroundColor: "#FADE7A" }}>
+            <h1
+                style={{
+                    marginTop: "0",
+                    paddingTop: "20px",
+                }}
+            >
+                React cookbook 🍝 in Javascript 🟨
+            </h1>
             <nav>
                 <ul>
                     <li>
@@ -15,6 +22,6 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
-        </>
+        </div>
     );
 }

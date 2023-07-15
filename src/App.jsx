@@ -14,8 +14,13 @@ export default function App() {
             <Router>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={MainRecipes} />
-                    <Route path="/documentation" component={Documentation} />
+                    <div style={{ width: "70%", margin: "auto" }}>
+                        <Route exact path="/" component={MainRecipes} />
+                        <Route
+                            path="/documentation"
+                            component={Documentation}
+                        />
+                    </div>
                 </Switch>
                 <Footer />
             </Router>
