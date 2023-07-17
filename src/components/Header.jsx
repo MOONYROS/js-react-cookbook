@@ -8,10 +8,10 @@ export default function Header() {
                 <h1 id="headerHeading">React cookbook 🍝 in Javascript 🟨</h1>
                 <nav>
                     <ul className="something">
-                        <li className="listElement">
+                        <li className="menuElement">
                             <Link to="/">Home</Link>
                         </li>
-                        <li className="listElement">
+                        <li className="menuElement">
                             <Link to="/documentation">Documentation</Link>
                         </li>
                     </ul>
