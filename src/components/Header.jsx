@@ -20,7 +20,7 @@ export default function Header() {
                     React cookbook 🍝 in Javascript 🟨
                 </h1>
                 <nav>
-                    <ul>
+                    <ul className="something">
                         <li style={listElement}>
                             <Link to="/">Home</Link>
                         </li>
