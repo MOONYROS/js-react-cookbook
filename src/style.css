@@ -1,3 +1,21 @@
-.something {
-    border: 1px solid green;
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#headerHeading {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+.listElement {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.coloredBackground {
+    background-color: #FADE7A;
 }
