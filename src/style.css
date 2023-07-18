@@ -1,21 +1,35 @@
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
 #headerHeading {
-    margin-top: 0px;
+    margin: 0px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menuElement {
     display: inline-block;
+}
+
+/* the colors could use a change to look more fresh */
+.menuLink {
+    text-decoration: none;
+    color: inherit; /* set to some kind of styling */
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     border: 2px solid #da7635;
+    color: #da7635;
+}
+
+.menuLink:hover {
+    background-color: #da7635;
+    color: #fade7a;
 }
 
 .coloredBackground {
     background-color: #fade7a;
+    height: 150px;
 }

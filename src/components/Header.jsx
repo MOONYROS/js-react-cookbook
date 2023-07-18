@@ -9,10 +9,14 @@ export default function Header() {
                 <nav>
                     <ul className="something">
                         <li className="menuElement">
-                            <Link to="/">Home</Link>
+                            <Link className="menuLink" to="/">
+                                Home
+                            </Link>
                         </li>
                         <li className="menuElement">
-                            <Link to="/documentation">Documentation</Link>
+                            <Link className="menuLink" to="/documentation">
+                                Documentation
+                            </Link>
                         </li>
                     </ul>
                 </nav>
