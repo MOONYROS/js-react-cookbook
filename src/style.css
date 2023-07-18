@@ -45,6 +45,7 @@ COLORS FOR SAVING
 
 .menuLink:hover {
     background-color: #febd4d;
+    border: 2px solid #fce199;
     color: #da7635;
     transition-duration: 0.2s;
 }
