@@ -3,13 +3,11 @@ import * as links from "../webLinks";
 
 export default function Footer() {
     return (
-        <>
+        <div>
             <h2>Footer</h2>
-            <div>
-                <label htmlFor="">
-                    Made by <a href={links.profileLink}>MOONYROS</a>, 2023
-                </label>
-            </div>
-        </>
+            <p>
+                Made by <a href={links.profileLink}>MOONYROS</a>, 2023
+            </p>
+        </div>
     );
 }
