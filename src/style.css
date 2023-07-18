@@ -1,12 +1,30 @@
+/*
+COLORS FOR SAVING
+=================
+
+#fce199 jasmine
+#febd4d xanthous
+#da7635 cocoa brown
+
+
+*/
+
 .container {
     width: 70%;
     margin: auto;
 }
 
+.coloredBackground {
+    background-color: #fce199;
+    height: 150px;
+}
+
+/******* HEADER *******/
 #headerHeading {
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #da7635;
 }
 
 .menuElement {
@@ -22,14 +40,14 @@
     border-radius: 10px;
     border: 2px solid #da7635;
     color: #da7635;
+    transition-duration: 0.2s;
 }
 
 .menuLink:hover {
-    background-color: #da7635;
-    color: #fade7a;
+    background-color: #febd4d;
+    color: #da7635;
+    transition-duration: 0.2s;
 }
 
-.coloredBackground {
-    background-color: #fade7a;
-    height: 150px;
-}
+/******* FOOTER *******/
+
