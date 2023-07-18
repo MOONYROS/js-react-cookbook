@@ -19,13 +19,20 @@ COLORS FOR SAVING
     height: 150px;
 }
 
-/******* HEADER *******/
-#headerHeading {
+h1 {
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #da7635;
 }
+
+h2 {
+    margin: 0px;
+    padding-top: 20px;
+    color: #da7635;
+}
+
+/******* HEADER *******/
 
 .menuElement {
     display: inline-block;
@@ -51,4 +58,19 @@ COLORS FOR SAVING
 }
 
 /******* FOOTER *******/
+#footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #da7635;
+    color: #da7635;
+    transition-duration: 0.2s;
+}
 
+#footer a:hover {
+    border: 2px solid #fce199;
+    background-color: #febd4d;
+    color: #da7635;
+    transition-duration: 0.2s;
+}

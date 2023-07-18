@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className="coloredBackground">
             <div className="container">
-                <h1 id="headerHeading">React cookbook 🍝 in Javascript 🟨</h1>
+                <h1>React cookbook 🍝 in Javascript 🟨</h1>
                 <nav>
                     <ul className="something">
                         <li className="menuElement">
