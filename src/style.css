@@ -33,8 +33,11 @@ h2 {
 }
 
 /******* HEADER *******/
+#header ul {
+    padding-left: 0px;
+}
 
-.menuElement {
+#header li {
     display: inline-block;
 }
 
@@ -73,4 +76,8 @@ h2 {
     background-color: #febd4d;
     color: #da7635;
     transition-duration: 0.2s;
+}
+
+#footer p {
+    padding-top: 60px;
 }

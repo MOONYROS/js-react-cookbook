@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
-        <div className="coloredBackground">
+        <div className="coloredBackground" id="header">
             <div className="container">
                 <h1>React cookbook 🍝 in Javascript 🟨</h1>
                 <nav>
