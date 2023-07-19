@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Documentation() {
     return (
-        <>
+        <div id="documentation">
             <h1>Documentation</h1>
             <div>
                 <h2>About this app</h2>
@@ -73,6 +73,6 @@ export default function Documentation() {
                     on button of which you are about to click.
                 </p>
             </div>
-        </>
+        </div>
     );
 }

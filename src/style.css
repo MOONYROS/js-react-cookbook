@@ -60,6 +60,11 @@ h2 {
     transition-duration: 0.2s;
 }
 
+/******* DOCUMENTATION *******/
+#documentation {
+    display: block;
+}
+
 /******* FOOTER *******/
 #footer a {
     text-decoration: none;
