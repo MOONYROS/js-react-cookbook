@@ -68,13 +68,31 @@ form {
 
 .creator {
     display: inline-block;
-    width: 50%;
+    width: 35%;
+    vertical-align: top;
+    padding: 3%;
 }
 
 .creator label {
     display: block;
     color: #da7635;
     font-size: 1.25rem;
+}
+
+#recipeForm button {
+    width: 30%;
+    height: 30px;
+    background-color: #fce199;
+    border: 2px solid #da7635;
+    color: #da7635;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#recipeForm button:active {
+    transition-duration: 0.2s;
+    border: 2px solid #fce199;
+    background-color: #febd4d;
 }
 
 /******* DOCUMENTATION *******/

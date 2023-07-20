@@ -19,7 +19,7 @@ export default function SubmitForm({ onFormSubmit }) {
     };
 
     return (
-        <>
+        <div id="recipeForm">
             <h2>Create a recipe</h2>
             <form onSubmit={handleSubmit}>
                 <InputForm
@@ -44,6 +44,6 @@ export default function SubmitForm({ onFormSubmit }) {
                 />
                 <button type="submit">Create Recipe</button>
             </form>
-        </>
+        </div>
     );
 }
