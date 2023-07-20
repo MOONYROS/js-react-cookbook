@@ -21,8 +21,7 @@ COLORS FOR SAVING
 
 h1 {
     margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
     color: #da7635;
 }
 
@@ -63,19 +62,19 @@ h2 {
 /******* RECIPE CREATOR *******/
 form {
     margin: 20px 0px;
-    border: 3px solid #da7635;
-    
+    border: 2px solid #da7635;
+    border-radius: 10px;
 }
 
 .creator {
     display: inline-block;
-    width: 40%;
+    width: 50%;
 }
 
 .creator label {
     display: block;
     color: #da7635;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /******* DOCUMENTATION *******/

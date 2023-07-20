@@ -19,28 +19,31 @@ export default function SubmitForm({ onFormSubmit }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <InputForm
-                id={"nameField"}
-                text={"Recipe Name:"}
-                placeholder={"recipe name"}
-            />
-            <TextareaForm
-                id={"descriptionField"}
-                text={"Recipe Description:"}
-                placeholder={"recipe description..."}
-            />
-            <TextareaForm
-                id={"ingrList"}
-                text={"Recipe Ingredients:"}
-                placeholder={"ingredient 1, ingredient 2..."}
-            />
-            <TextareaForm
-                id={"procedureField"}
-                text={"Procedure:"}
-                placeholder={"Type in the procedure..."}
-            />
-            <button type="submit">Create Recipe</button>
-        </form>
+        <>
+            <h2>Create a recipe</h2>
+            <form onSubmit={handleSubmit}>
+                <InputForm
+                    id={"nameField"}
+                    text={"Recipe Name:"}
+                    placeholder={"recipe name"}
+                />
+                <TextareaForm
+                    id={"descriptionField"}
+                    text={"Recipe Description:"}
+                    placeholder={"recipe description..."}
+                />
+                <TextareaForm
+                    id={"ingrList"}
+                    text={"Recipe Ingredients:"}
+                    placeholder={"ingredient 1, ingredient 2..."}
+                />
+                <TextareaForm
+                    id={"procedureField"}
+                    text={"Procedure:"}
+                    placeholder={"Type in the procedure..."}
+                />
+                <button type="submit">Create Recipe</button>
+            </form>
+        </>
     );
 }
