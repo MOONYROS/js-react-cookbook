@@ -60,6 +60,24 @@ h2 {
     transition-duration: 0.2s;
 }
 
+/******* RECIPE CREATOR *******/
+form {
+    margin: 20px 0px;
+    border: 3px solid #da7635;
+    
+}
+
+.creator {
+    display: inline-block;
+    width: 40%;
+}
+
+.creator label {
+    display: block;
+    color: #da7635;
+    font-size: 1.5rem;
+}
+
 /******* DOCUMENTATION *******/
 #documentation {
     display: block;
