@@ -12,6 +12,7 @@ export default function InputForm({ id, text, placeholder }) {
                 name={id}
                 placeholder={placeholder}
                 type="text"
+                autoComplete="off"
                 required
             />
         </div>
