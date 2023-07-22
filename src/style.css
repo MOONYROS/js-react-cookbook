@@ -42,6 +42,18 @@ h2 {
     color: #da7635;
 }
 
+input,
+textarea {
+    font-family: roboto;
+    border: 2px solid #da7635;
+    border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #febd4d;
+}
+
 .container {
     width: 70%;
     margin: auto;
@@ -61,10 +73,9 @@ h2 {
     display: inline-block;
 }
 
-/* the colors could use a change to look more fresh */
 .menuLink {
     text-decoration: none;
-    color: inherit; /* set to some kind of styling */
+    color: inherit;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
