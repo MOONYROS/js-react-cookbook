@@ -15,8 +15,31 @@ COLORS FOR SAVING
     src: url(./fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'sniglet';
+    src: url(./fonts/Sniglet-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'comfortaa';
+    src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
 body {
     font-family: roboto;
+}
+
+h1 {
+    font-family: comfortaa;
+    margin: 0px;
+    padding: 20px 0px;
+    color: #da7635;
+}
+
+h2 {
+    margin: 0px;
+    padding-top: 20px;
+    color: #da7635;
 }
 
 .container {
@@ -27,18 +50,6 @@ body {
 .coloredBackground {
     background-color: #fce199;
     height: 150px;
-}
-
-h1 {
-    margin: 0px;
-    padding: 20px 0px;
-    color: #da7635;
-}
-
-h2 {
-    margin: 0px;
-    padding-top: 20px;
-    color: #da7635;
 }
 
 /******* HEADER *******/

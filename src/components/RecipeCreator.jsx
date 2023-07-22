@@ -24,22 +24,22 @@ export default function SubmitForm({ onFormSubmit }) {
             <form onSubmit={handleSubmit}>
                 <InputForm
                     id={"nameField"}
-                    text={"Recipe Name:"}
+                    text={"Recipe Name"}
                     placeholder={"recipe name"}
                 />
                 <TextareaForm
                     id={"descriptionField"}
-                    text={"Recipe Description:"}
+                    text={"Recipe Description"}
                     placeholder={"recipe description..."}
                 />
                 <TextareaForm
                     id={"ingrList"}
-                    text={"Recipe Ingredients:"}
+                    text={"Recipe Ingredients"}
                     placeholder={"ingredient 1, ingredient 2..."}
                 />
                 <TextareaForm
                     id={"procedureField"}
-                    text={"Procedure:"}
+                    text={"Procedure"}
                     placeholder={"Type in the procedure..."}
                 />
                 <button type="submit">Create Recipe</button>
