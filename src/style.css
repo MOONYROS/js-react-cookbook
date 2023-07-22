@@ -9,6 +9,16 @@ COLORS FOR SAVING
 
 */
 
+/* EXTRA FONTS (probably need to clean up) */
+@font-face {
+    font-family: 'roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: roboto;
+}
+
 .container {
     width: 70%;
     margin: auto;
