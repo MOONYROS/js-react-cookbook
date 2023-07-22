@@ -1,15 +1,11 @@
 /*
 COLORS FOR SAVING
 =================
-
 #fce199 jasmine
 #febd4d xanthous
 #da7635 cocoa brown
-
-
 */
 
-/* EXTRA FONTS (probably need to clean up) */
 @font-face {
     font-family: 'roboto';
     src: url(./fonts/Roboto-Regular.ttf);
@@ -52,6 +48,13 @@ textarea {
 input:focus,
 textarea:focus {
     outline: 3px solid #febd4d;
+    border: 2px solid white;
+}
+
+form {
+    margin: 20px 0px;
+    border: 2px solid #da7635;
+    border-radius: 10px;
 }
 
 .container {
@@ -92,12 +95,6 @@ textarea:focus {
 }
 
 /******* RECIPE CREATOR *******/
-form {
-    margin: 20px 0px;
-    border: 2px solid #da7635;
-    border-radius: 10px;
-}
-
 .creator {
     display: inline-block;
     width: 35%;
@@ -121,10 +118,16 @@ form {
     transition-duration: 0.2s;
 }
 
-#recipeForm button:active {
+#recipeForm button:hover {
     transition-duration: 0.2s;
     border: 2px solid #fce199;
     background-color: #febd4d;
+}
+
+#recipeForm button:active {
+    transition-duration: 0.1s;
+    border: 2px solid #da7635;
+    background-color: #ea8645;
 }
 
 /******* DOCUMENTATION *******/
