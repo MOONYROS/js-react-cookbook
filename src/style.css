@@ -165,6 +165,7 @@ button:active {
     font-weight: bold;
 }
 
+#cancel,
 #delete {
     font-weight: bolder;
     background-color: #d9534f;
@@ -173,14 +174,36 @@ button:active {
     transition-duration: 0.2s;
 }
 
+#cancel:hover,
 #delete:hover {
     background-color: #b44444;
     color: whitesmoke;
     transition-duration: 0.2s;
 }
 
+#cancel:active,
 #delete:active {
     background-color: black;
     color: white;
+    transition-duration: 0.2s;
+}
+
+#save {
+    font-weight: bolder;
+    background-color: #28a745;
+    color: white;
+    border: 5px solid white;
+    transition-duration: 0.2s;
+    height: 35px;
+}
+
+#save:hover {
+    background-color: #218838;
+    transition-duration: 0.2s;
+}
+
+
+#save:active {
+    border: 5px solid #93d3a2;
     transition-duration: 0.2s;
 }

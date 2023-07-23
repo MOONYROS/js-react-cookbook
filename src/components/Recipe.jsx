@@ -67,7 +67,7 @@ export default function Recipe({
 
     if (isEditing) {
         return (
-            <>
+            <div id="recipeEdit">
                 <label htmlFor="recipeNameField">Recipe Name:</label>
                 <input
                     id="recipeNameField"
@@ -100,9 +100,13 @@ export default function Recipe({
                     onChange={handleInputChange}
                 />
 
-                <button onClick={handleSaveClick}>Save</button>
-                <button onClick={handleCancelClick}>Cancel</button>
-            </>
+                <button id="save" onClick={handleSaveClick}>
+                    Save
+                </button>
+                <button id="cancel" onClick={handleCancelClick}>
+                    Cancel
+                </button>
+            </div>
         );
     }
 
