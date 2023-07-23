@@ -1,11 +1,3 @@
-/*
-COLORS FOR SAVING
-=================
-#fce199 jasmine
-#febd4d xanthous
-#da7635 cocoa brown
-*/
-
 @font-face {
     font-family: 'roboto';
     src: url(./fonts/Roboto-Regular.ttf);
@@ -35,7 +27,12 @@ h2 {
 
 h3 {
     display: inline-block;
+    margin: 10px 0px;
     border-bottom: 2px solid #da7635;
+}
+
+ul {
+    list-style: "🔸 ";
 }
 
 input,
