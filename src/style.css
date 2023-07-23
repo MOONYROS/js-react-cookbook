@@ -33,6 +33,11 @@ h2 {
     color: #da7635;
 }
 
+h3 {
+    display: inline-block;
+    border-bottom: 2px solid #da7635;
+}
+
 input,
 textarea {
     font-family: roboto;
