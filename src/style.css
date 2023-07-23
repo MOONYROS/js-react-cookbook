@@ -162,3 +162,28 @@ button:active {
 #footer p {
     padding-top: 60px;
 }
+
+/******* RECIPE *******/
+.recipeButton {
+    font-weight: bold;
+}
+
+#delete {
+    font-weight: bolder;
+    background-color: #d9534f;
+    color: white;
+    border-color: black;
+    transition-duration: 0.2s;
+}
+
+#delete:hover {
+    background-color: #b44444;
+    color: whitesmoke;
+    transition-duration: 0.2s;
+}
+
+#delete:active {
+    background-color: black;
+    color: white;
+    transition-duration: 0.2s;
+}

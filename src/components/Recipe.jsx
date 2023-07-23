@@ -127,10 +127,20 @@ export default function Recipe({
                 heading={"Preparation"}
                 content={<p>{editedRecipe.procedure}</p>}
             />
-            <button type="button" onClick={handleEditClick}>
+            <button
+                className="recipeButton"
+                id="edit"
+                type="button"
+                onClick={handleEditClick}
+            >
                 Edit Recipe
             </button>
-            <button type="button" onClick={handleDeleteClick}>
+            <button
+                className="recipeButton"
+                id="delete"
+                type="button"
+                onClick={handleDeleteClick}
+            >
                 Delete Recipe
             </button>
         </>
