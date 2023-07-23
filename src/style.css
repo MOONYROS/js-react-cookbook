@@ -12,11 +12,6 @@ COLORS FOR SAVING
 }
 
 @font-face {
-    font-family: 'sniglet';
-    src: url(./fonts/Sniglet-Regular.ttf);
-}
-
-@font-face {
     font-family: 'comfortaa';
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf);
 }
@@ -43,6 +38,10 @@ textarea {
     font-family: roboto;
     border: 2px solid #da7635;
     border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: medium;
+    resize: none;
 }
 
 input:focus,
@@ -111,6 +110,7 @@ form {
 #recipeForm button {
     width: 30%;
     height: 30px;
+    margin: 20px;
     background-color: #fce199;
     border: 2px solid #da7635;
     color: #da7635;
@@ -126,8 +126,9 @@ form {
 
 #recipeForm button:active {
     transition-duration: 0.1s;
-    border: 2px solid #da7635;
-    background-color: #ea8645;
+    border: 2px solid #febd4d;
+    background-color: #da7635;
+    color: #febd4d;
 }
 
 /******* DOCUMENTATION *******/
