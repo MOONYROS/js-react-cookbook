@@ -37,6 +37,7 @@ ul {
 
 input,
 textarea {
+    width: 300px;
     font-family: roboto;
     border: 2px solid #da7635;
     border-radius: 10px;
@@ -50,6 +51,10 @@ input:focus,
 textarea:focus {
     outline: 3px solid #febd4d;
     border: 2px solid white;
+}
+
+textarea {
+    height: 100px;
 }
 
 form {
