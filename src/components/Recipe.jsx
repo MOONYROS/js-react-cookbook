@@ -74,6 +74,7 @@ export default function Recipe({
                     name="recipeName"
                     value={editedRecipe.recipeName}
                     onChange={handleInputChange}
+                    placeholder="Type new name..."
                 />
 
                 <label htmlFor="descriptionField">Recipe Description:</label>
@@ -82,6 +83,7 @@ export default function Recipe({
                     name="description"
                     value={editedRecipe.description}
                     onChange={handleInputChange}
+                    placeholder="Type new description..."
                 />
 
                 <label htmlFor="ingrList">Recipe Ingredients:</label>
@@ -90,6 +92,7 @@ export default function Recipe({
                     name="ingredients"
                     value={editedRecipe.ingredientsInput}
                     onChange={handleInputChange}
+                    placeholder="Type new ingredients..."
                 />
 
                 <label htmlFor="procedureField">Procedure:</label>
@@ -98,6 +101,7 @@ export default function Recipe({
                     name="procedure"
                     value={editedRecipe.procedure}
                     onChange={handleInputChange}
+                    placeholder="Type new procedure..."
                 />
 
                 <button id="save" onClick={handleSaveClick}>
